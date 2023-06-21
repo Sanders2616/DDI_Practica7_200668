@@ -53,9 +53,9 @@ class MainActivity : AppCompatActivity() {
         val calendar = Calendar.getInstance()
         val hourOfDay = calendar.get(Calendar.HOUR_OF_DAY)
         val saludo: String = when(hourOfDay) {
-            in 6..11 -> "Buenos días!"
-            in 12..18 -> "Buenas tardes!"
-            else -> "Buenas noches!"
+            in 6..11 -> "Buen día"
+            in 12..18 -> "Buenass... Nalgas"
+            else -> "Buena noche"
         }
         saludoTextView.text = saludo
 
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         updateTimeRunnable = object : Runnable {
             override fun run() {
                 val currentTime = Calendar.getInstance().time
-                val dateFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+                val dateFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
                 val formattedTime = dateFormat.format(currentTime)
                 clockTextView.text = formattedTime
 
@@ -86,8 +86,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun obtenerTemperatura() {
 
-        val latitud = 20.237791
-        val longitud = -97.9601548
+        val latitud = 32.5644
+        val longitud = -115.3533
 
 
         val retrofit = Retrofit.Builder()
