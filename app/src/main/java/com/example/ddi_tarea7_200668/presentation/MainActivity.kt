@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         val hourOfDay = calendar.get(Calendar.HOUR_OF_DAY)
         val saludo: String = when(hourOfDay) {
             in 6..11 -> "Buen día"
-            in 12..18 -> "Buenass... Nalgas"
+            in 12..18 -> "Buena tarde"
             else -> "Buena noche"
         }
         saludoTextView.text = saludo
