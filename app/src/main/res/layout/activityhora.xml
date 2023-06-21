@@ -22,7 +22,15 @@
         android:textColor="@android:color/black"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:fontFamily="@font/roboto"
-        />
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/temperaturaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="temperatura"
+        android:textStyle="bold" />
 
 </LinearLayout>
